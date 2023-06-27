@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,i;
+	cin>>T;
+	if(T>=1 && T<=100000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y;
+	        if(X>=1 && X<=100 && Y>=1 && Y<=1000)
+	        {
+	            cout<<Y/X<<endl;
+	        }
+	    }
+	}
+	return 0;
+}
