@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,i,A;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y>>A;
+	        if(X>=20 && X<=40 && Y>=20 && Y<=40 && A>=10 && A<=50)
+	        {
+	            if(A>=X && A<Y)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;;
+	            }
+	        }
+	        cout<<endl;
+	    }
+	}
+	return 0;
+}
+ 
