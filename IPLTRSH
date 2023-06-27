@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,N,M,i;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>N>>M;
+	        if(N>=1 && N<=100000 && M>=1 && M<=100000)
+	        {
+	            if(M>=N)
+	            {
+	                cout<<0<<endl;
+	            }
+	            else
+	            {
+	                cout<<N-M<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
