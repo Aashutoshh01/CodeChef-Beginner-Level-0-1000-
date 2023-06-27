@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int N,a,b,c,i;
+	cin>>N;
+	if(N>=1 && N<=6)
+	{
+	    for(int i=0;i<N;i++)
+	    {
+	        cin>>a>>b>>c;
+	        if(a>=1 && b>=1 && c>=1 && a<=10000 && b<=10000 && c<=10000)
+	        {
+	            if(a>=b && a>=c)
+	            {
+	                if(b>c)
+	                {
+	                    cout<<b<<endl;
+	                }
+	                else
+	                {
+	                    cout<<c<<endl;
+	                }
+	            }
+	            if(b>=a && b>=c)
+	            {
+	                if(a>c)
+	                {
+	                    cout<<a<<endl;
+	                }
+	                else
+	                {
+	                    cout<<c<<endl;
+	                }
+	            }
+	            if(c>=a && c>=b)
+	            {
+	                if(a>b)
+	                {
+	                    cout<<a<<endl;
+	                }
+	                else
+	                {
+	                    cout<<b<<endl;
+	                }
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
