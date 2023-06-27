@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,i;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y;
+	        if(X>=100 && X<=200 && Y>=100 && Y<=200 && X!=Y)
+	        {
+	            if(X>Y)
+	            {
+	                cout<<"A"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"B"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
