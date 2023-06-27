@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,i;
+	cin>>T;
+	if(T>=1 && T<=10000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X;
+	        if(X>=1 && X<=1000000)
+	        {
+	            if(X>=67 && X<=45000)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
