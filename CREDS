@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,Z,i;
+	cin>>T;
+	if(T>=1 && T<=10)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y>>Z;
+	        if(X>=1 && Y>=1 && Z>=1 && X<=10 && Y<=10 && Z<=10)
+	        {
+	            cout<<4*X+2*Y<<endl;
+	        }
+	    }
+	}
+	return 0;
+}
