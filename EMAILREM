@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int N,U;
+	cin>>N>>U;
+	if(U>=1 && U<100000 && N>=2 && N<=100000)
+	{
+	    cout<<N-U<<endl;
+	}
+	return 0;
+}
