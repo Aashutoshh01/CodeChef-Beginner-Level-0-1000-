@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,N,i;
+	cin>>T;
+	if(T>=1 && T<=10)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>N;
+	        if(N>=1 && N<=10)
+	        {
+	            cout<<3*N<<endl;
+	        }
+	    }
+	}
+	return 0;
+}
