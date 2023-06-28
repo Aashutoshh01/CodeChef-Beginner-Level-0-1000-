@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,A,B,i;
+	cin>>T;
+	if(T>=1 && T<=50)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>A>>B;
+	        if(A>=0 && A<=6 && B>=0 && B<=6)
+	        {
+	            if(A>=B)
+	            {
+	                cout<<7-A<<endl;
+	            }
+	            else
+	            {
+	                cout<<7-B<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
