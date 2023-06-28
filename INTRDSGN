@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X1,Y1,X2,Y2,i;
+	cin>>T;
+	if(T>=1 && T<=100)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X1>>Y1>>X2>>Y2;
+	        if(X1>=1 && X2>=1 && Y1>=1 && Y2>=1 && X1<=100 && X2<=100 && Y1<=100 && Y2<=100)
+	        {
+	            if(X1+Y1<X2+Y2)
+	            {
+	                cout<<(X1+Y1)<<endl;
+	            }
+	            else
+	            {
+	                cout<<(X2+Y2)<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
