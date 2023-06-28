@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,i;
+	cin>>T;
+	if(T>=1 && T<=200)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X;
+	        if(X>=1 && X<=200)
+	        {
+	            if(X<=70)
+	            {
+	                cout<<"0"<<endl;
+	            }
+	            else if(X>70 && X<=100)
+	            {
+	                cout<<"500"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"2000"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
