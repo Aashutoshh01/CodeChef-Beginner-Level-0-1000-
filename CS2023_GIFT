@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int X,N,M;
+	cin>>X>>N>>M;
+	if(X>=1 && N>=1 && M>=1 && X<=1000 && N<=1000 && M<=1000)
+	{
+	    if(X>=N)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else if(X<N && N-X<=M)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
