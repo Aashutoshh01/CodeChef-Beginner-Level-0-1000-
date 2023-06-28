@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,B,G,i;
+	cin>>T;
+	if(T>=1 && T<=100)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>G>>B;
+	        if(G>=1 && G<=100 && B>=1 && B<=100)
+	        {
+	            if(B>G)
+	            {
+	                cout<<B-G<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
