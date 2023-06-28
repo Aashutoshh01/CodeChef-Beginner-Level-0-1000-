@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int R,C,E;
+	cin>>R>>C>>E;
+	if(R>=1 && C>=1 && E>=1 && R<=100 && C<=100 && E<=100)
+	{
+	    cout<<(R+E)*C<<endl;
+	}
+	return 0;
+}
