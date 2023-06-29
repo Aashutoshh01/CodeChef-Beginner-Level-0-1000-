@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,i;
+	cin>>T;
+	if(T>=1 && T<=100)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X;
+	        if(X>=1 && X<=10)
+	        {
+	            if(X<=3)
+	            {
+	                cout<<"BRONZE"<<endl;
+	            }
+	            else if(X>3 && X<=6)
+	            {
+	                cout<<"SILVER"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"GOLD"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
