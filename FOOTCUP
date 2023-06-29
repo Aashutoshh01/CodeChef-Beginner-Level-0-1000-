@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,i;
+	cin>>T;
+	if(T>=1 && T<=100)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y;
+	        if(X>=0 && X<=9 && X>=0 && X<=9)
+	        {
+	            if(X==Y)
+	            {
+	                if(X>=1)
+	                {
+	                    cout<<"YES"<<endl;
+	                }
+	                else
+	                {
+	                    cout<<"NO"<<endl;
+	                }
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
