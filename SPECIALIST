@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,Z,i;
+	cin>>T;
+	if(T>=1 && T<=10000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y>>Z;
+	        if(X>=1 && X<=100 && Y>=1 && Y<=100 && Z>=1 && Z<=100)
+	        {
+	            if(X!=Y && Y!=Z && Z!=X)
+	            {
+	                if(X>Y && X>Z)
+	                {
+	                    cout<<"SETTER"<<endl;
+	                }
+	                if(Y>Z && Y>X)
+	                {
+	                    cout<<"TESTER"<<endl;
+	                }
+	                if(Z>X && Z>Y)
+	                {
+	                    cout<<"EDITORIALIST"<<endl;
+	                }
+	            }
+	        }
+	    }
+	}
+	
+	return 0;
+}
