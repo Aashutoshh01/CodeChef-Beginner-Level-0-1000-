@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,R,i;
+	cin>>T;
+	if(T>=1 && T<=100)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>R;
+	        if(R>=1 && R<=3000)
+	        {
+	            cout<<R*100<<endl;
+	        }
+	    }
+	}
+	return 0;
+}
