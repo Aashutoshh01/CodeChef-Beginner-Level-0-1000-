@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,W,X,Y,Z,i;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>W>>X>>Y>>Z;
+	        if(W>=1 && W<=10000 && X>=1 && X<=10000 && Y>=1 && Y<=10000 && Z>=1 && Z<=10000)
+	        {
+	            cout<<W+(X-Y)*Z<<endl;
+	        }
+	    }
+	}
+	return 0;
+}
