@@ -1,0 +1,37 @@
+//  We have populated the solutions for the 10 easiest problems for your support.
+// Click on the SUBMIT button to make a submission to this problem.
+
+#include <iostream>
+using namespace std;
+typedef long long ll;
+
+int main() {
+	int T,N,i,sum=0,last,j=0,temp;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>N;
+	        temp=N;
+	        if(N>=1 && N<=1000000)
+	        {
+	            last=N%10;
+	            while(N>0)
+	            {
+	                N=N/10;
+	                j++;
+	            }
+	            for(int i=0;i<j-1;i++)
+	            {
+	                temp=temp/10;
+	            }
+	        }
+	        sum=last+temp;
+	        cout<<sum<<endl;
+	        sum=0;
+	        j=0;
+	    }
+	}
+	return 0;
+}
