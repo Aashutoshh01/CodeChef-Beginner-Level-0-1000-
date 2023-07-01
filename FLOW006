@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int T,N,i,sum;
+    sum=0;
+    cin>>T;
+    if(T>=1 && T<=1000)
+    {
+        for(int i=0;i<T;i++)
+        {
+            cin>>N;
+            if(N>=1 && N<=1000000)
+            {
+                while(N>0)
+                {
+                    sum+=N%10;
+                    N=N/10;
+                }
+            }
+            cout<<sum<<endl;
+            sum=0;
+        }
+    }
+}
