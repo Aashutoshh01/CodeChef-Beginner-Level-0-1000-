@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,R1,R2,R3,i;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>R1>>R2>>R3;
+	        if(R1>=1 && R1<=10 && R2>=1 && R2<=10 && R3>=1 && R3<=10)
+	        {
+	            if(R1>R2+R3)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else if(R2>R1+R3)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else if(R3>R1+R2)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
