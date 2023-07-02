@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,i;
+	float A,B,C,Temp;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>A>>B>>C;
+	        if(A>=1 && A<=10 && B>=1 && B<=10 && C>=1 && C<=100)
+	        {
+	            Temp=(A+B)/2;
+	            if(Temp>C)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
