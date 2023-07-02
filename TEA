@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,Z,i;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y>>Z;
+	        if(X>=1 && X<=100 && Y>=1 && Y<=100 && Z>=1 && Z<=100)
+	        {
+	            if(X%Y==0)
+	            {
+	                cout<<(X/Y)*Z<<endl;
+	            }
+	            else
+	            {
+	                cout<<((X/Y)+1)*Z<<endl;
+	            }
+	            
+	        }
+	    }
+	}
+	return 0;
+}
