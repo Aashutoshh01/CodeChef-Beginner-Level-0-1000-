@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,Z,i;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y>>Z;
+	        if(X>=1 && X<=100 && Y>=1 && Y<=100 && Z>=1 && Z<=100 && X!=Y && Y!=Z && Z!=X)
+	        {
+	            if(X<Y && X<Z)
+	            {
+	                cout<<"ALICE"<<endl;
+	            }
+	            else
+	            {
+	                if(Y<Z)
+	                {
+	                    cout<<"BOB"<<endl;
+	                }
+	                else
+	                {
+	                    cout<<"CHARLIE"<<endl;
+	                }
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
