@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,P,Q,R,S,i;
+	cin>>T;
+	if(T>=1 && T<=5000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>P>>Q>>R>>S;
+	        if(P>=1 && P<=100 && Q>=1 && Q<=100 && R>=1 && R<=100 && S>=1 && S<=100)
+	        {
+	            if(P>Q+R+S)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else if(Q>P+R+S)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else if(R>Q+P+S)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else if(S>Q+R+P)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
