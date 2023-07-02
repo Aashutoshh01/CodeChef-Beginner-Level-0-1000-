@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,i;
+	float X,Y;
+	cin>>T;
+	if(T>=1 && T<=20000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y;
+	        if(X>=1 && X<=200 && Y>=1 && Y<=200)
+	        {
+	            if(Y<=107*X/100)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
