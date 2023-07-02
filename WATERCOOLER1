@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,M,Y,i;
+	cin>>T;
+	if(T>=1 && T<=100)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y>>M;
+	        if(X>=1 && X<=10000 && M>=1 && M<=10000 && Y>=1 && Y<=100000000)
+	        {
+	            if(M*X<Y)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
