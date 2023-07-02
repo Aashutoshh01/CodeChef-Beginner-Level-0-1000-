@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,B1,B2,B3,i;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>B1>>B2>>B3;
+	        if(B1==1 || B1==0 && B2==1 || B2==0 && B3==1 || B3==0)
+	        {
+	            if(B1+B2+B3<2)
+	            {
+	                cout<<"WATER FILLING TIME"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NOT NOW"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
