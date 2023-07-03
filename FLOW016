@@ -1,0 +1,31 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+	int T,A,B,i,j,k,gcd,lcm;
+	scanf("%d",&T);
+	if(T>=1 && T<=1000)
+	{
+	    for(i=0,gcd=1,lcm=A*B;i<T;i++)
+	    {
+	        scanf("%d%d",&A,&B);
+	        if(A>=1 && A<=pow(10,6) && B>=1 && B<=pow(10,6))
+	        {
+	           for(j=1,k=A*B;j<=A,j<=B,k>0;j++,k--)
+	           {
+	               if(A%j==0 && B%j==0)
+	               {
+	                   gcd=j;
+	               }
+	               if(k%A==0 && k%B==0)
+	               {
+	                   lcm=k;
+	               }
+	           }
+	        }
+	        printf("%d %d\n",gcd,lcm);
+	    }
+	}
+	return 0;
+}
