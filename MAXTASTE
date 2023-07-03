@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,a,b,c,d,i;
+	cin>>T;
+	if(T>=1 && T<=100)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>a>>b>>c>>d;
+	        if(a>=1 && a<=100 && b>=1 && b<=100 && c>=1 && c<=100 && d>=1 && d<=100)
+	        {
+	            if(a>=b && c>=d)
+	            {
+	                cout<<a+c<<endl;
+	            }
+	            else if(a>=b && c<d)
+	            {
+	                cout<<a+d<<endl;
+	            }
+	            else if(b>a && c>=d)
+	            {
+	                cout<<b+c<<endl;
+	            }
+	            else if(b>a && c<d)
+	            {
+	                cout<<b+d<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
