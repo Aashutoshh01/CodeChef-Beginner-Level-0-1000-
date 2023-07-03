@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,Pa,Pb,Qa,Qb,i,temp1,temp2;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>Pa>>Pb>>Qa>>Qb;
+	        if(Pa>=1 && Pa<=100 && Pb>=1 && Pb<=100 && Qa>=1 && Qa<=100 && Qb>=1 && Qb<=100)
+	        {
+	            if(Pa>=Pb)
+	            {
+	                temp1=Pa;
+	            }
+	            else
+	            {
+	                temp1=Pb;
+	            }
+	            if(Qa>=Qb)
+	            {
+	                temp2=Qa;
+	            }
+	            else
+	            {
+	                temp2=Qb;
+	            }
+	            if(temp1<temp2)
+	            {
+	                cout<<"P"<<endl;
+	            }
+	            else if(temp2<temp1)
+	            {
+	                cout<<"Q"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"TIE"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
