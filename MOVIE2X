@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int X,Y,i;
+	cin>>X>>Y;
+	if(X>=1 && X<=1000 && Y>=1 && Y<=1000)
+	{
+	    if(Y%2==0)
+	    {
+	        cout<<Y/2+(X-Y)<<endl;
+	    }
+	}
+	return 0;
+}
