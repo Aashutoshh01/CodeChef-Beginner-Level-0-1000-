@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,A,B,i;
+	cin>>T;
+	if(T>=1 && T<=100)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>A>>B;
+	        if(X>=1 && X<=100 && A>=0 && A<=100 && B>=0 && B<=100)
+	        {
+	            if((A+2*B)>=X)
+	            {
+	                cout<<"QUALIFY"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NOTQUALIFY"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
