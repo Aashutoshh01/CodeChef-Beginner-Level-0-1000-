@@ -10,19 +10,28 @@ int main() {
 	    for(int i=0;i<T;i++)
 	    {
 	        cin>>X>>Y>>Z;
-	        if(X>=1 && X<=100 && Y>=1 && Y<=100 && Z>=1 && Z<=100)
+	        if(X>=1 && X<=1000 && Y>=1 && Y<=1000 && Z>=1 && Z<=1000)
 	        {
-	            if(X%Y==0)
+	            if(Z%X==0 && Z%Y!=0)
 	            {
-	                cout<<(X/Y)*Z<<endl;
+	                cout<<"CHICKEN"<<endl;
 	            }
-	            else
+	            else if(Z%Y==0 && Z%X!=0)
 	            {
-	                cout<<((X/Y)+1)*Z<<endl;
+	                cout<<"DUCK"<<endl;
 	            }
-	            
+	            else if(Z%X!=0 && Z%Y!=0)
+	            {
+	                cout<<"NONE"<<endl;
+	            }
+	            else if(Z%X==0 && Z%Y==0)
+	            {
+	                cout<<"ANY"<<endl;
+	            }
 	        }
 	    }
 	}
 	return 0;
 }
+
+
