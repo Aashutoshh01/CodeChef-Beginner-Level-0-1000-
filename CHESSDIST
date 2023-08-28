@@ -1,0 +1,71 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int X1,Y1,X2,Y2;
+	        cin>>X1>>Y1>>X2>>Y2;
+	        if(X1>=1 && X1<=100000 && Y1>=1 && Y1<=100000 && X2>=1 && X2<=100000 && Y2>=1 && Y2<=100000)
+	        {
+	            if(X1>=X2)
+	            {
+	                if(Y1>=Y2)
+	                {
+	                    if(X1-X2>=Y1-Y2)
+	                    {
+	                        cout<<X1-X2<<endl;
+	                    }
+	                    else
+	                    {
+	                        cout<<Y1-Y2<<endl;
+	                    }
+	                }
+	                else
+	                {
+	                    if(X1-X2>=Y2-Y1)
+	                    {
+	                        cout<<X1-X2<<endl;
+	                    }
+	                    else
+	                    {
+	                        cout<<Y2-Y1<<endl;
+	                    }
+	                }
+	            }
+	            else
+	            {
+	                if(Y1>=Y2)
+	                {
+	                    if(X2-X1>=Y1-Y2)
+	                    {
+	                        cout<<X2-X1<<endl;
+	                    }
+	                    else
+	                    {
+	                        cout<<Y1-Y2<<endl;
+	                    }
+	                }
+	                else
+	                {
+	                    if(X2-X1>=Y2-Y1)
+	                    {
+	                        cout<<X2-X1<<endl;
+	                    }
+	                    else
+	                    {
+	                        cout<<Y2-Y1<<endl;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
