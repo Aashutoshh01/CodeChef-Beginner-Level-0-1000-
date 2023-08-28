@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int S,X,Y,Z;
+	        cin>>S>>X>>Y>>Z;
+	        if(S>=1 && S<=500 && X>=1 && X<=S && Y>=1 && Y<=S && X+Y<=S && Z<=S)
+	        {
+	            if(Z<=S-X-Y)
+	            {
+	                cout<<"0"<<endl;
+	            }
+	            else if(Z<=S-X || Z<=S-Y)
+	            {
+	                cout<<"1"<<endl;
+	            }
+	            else 
+	            {
+	                cout<<"2"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
