@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    long int x,y,z,a,b,flag=0;
+	    cin>>x>>y>>z;
+	    long int p[]={x,y,z};
+	    for(int i=0;i<3;i++){
+	        b=p[i];
+	        a=(p[0]*p[1]*p[2])/p[i];
+	        if(a%b==0){
+	            cout<<a<<" "<<b<<endl;
+	            flag=1;
+	            break;
+	        }
+	    }
+	    if(flag==0){
+	        cout<<"-1"<<endl;
+	    }
+	}
+	return 0;
+}
