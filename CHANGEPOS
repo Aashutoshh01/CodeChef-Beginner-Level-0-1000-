@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int a,b,c,d;
+	        cin>>a>>b>>c>>d;
+	        if(a>=1 && a<=10 && b>=1 && b<=10 && c>=1 && c<=10 && d>=1 && d<=10)
+	        {
+	            if(a==c && b==d)
+	            {
+	                cout<<"0"<<endl;
+	            }
+	            else if(a!=c && b!=d)
+	            {
+	                cout<<"1"<<endl;
+	            }
+	            else {
+	                cout<<"2"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
