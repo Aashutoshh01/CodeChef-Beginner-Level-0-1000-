@@ -1,0 +1,15 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b;
+	    cin>>a>>b;
+	    cout<<(float)sqrt(pow(b,2)-pow(a,2))<<" "<<(float)sqrt(pow(b,2)+pow(a,2))<<endl;
+	}
+	return 0;
+}
