@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,x,y,a,b;
+	    float c1,c2;
+	    cin>>n>>x>>y>>a>>b;
+	    c1=((float)n*(float)x)/(float)a;
+	    c2=((float)n*(float)y)/(float)b;
+	    if(c1<c2){
+	        cout<<"PETROL"<<endl;
+	    }
+	    else if(c2<c1){
+	        cout<<"DIESEL"<<endl;
+	    }
+	    else{
+	        cout<<"ANY"<<endl;
+	    }
+	}
+	return 0;
+}
