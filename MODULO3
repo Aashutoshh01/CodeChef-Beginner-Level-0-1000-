@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b;
+	    int temp;
+	    int count=0;
+	    cin>>a>>b;
+	    while(a%3!=0 && b%3!=0){
+	        count++;
+	        if(a>=b){
+	            a=a-b;
+	        }
+	        else{
+	            b=b-a;
+	        }
+	    }
+	    cout<<count<<endl;
+	}
+	return 0;
+}
