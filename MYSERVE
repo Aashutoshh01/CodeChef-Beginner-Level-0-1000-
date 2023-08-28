@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=200)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int P,Q;
+	        cin>>P>>Q;
+	        if(P>=0 && P<=10 && Q>=0 && Q<=100)
+	        {
+	            if(P+Q==0)
+	            {
+	                cout<<"ALICE"<<endl;
+	            }
+	            else
+	            {
+	                if((P+Q+1)%4==0 || (P+Q+2)%4==0)
+	                {
+	                    cout<<"BOB"<<endl;
+	                }
+	                else
+	                {
+	                    cout<<"ALICE"<<endl;
+	                }
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
