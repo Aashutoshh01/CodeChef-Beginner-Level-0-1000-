@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    int count=0,temp;
+	    cin>>n;
+	    if(n<50){
+	        if((50-n)%2==0){
+	            cout<<(50-n)/2<<endl;
+	        }
+	        else{
+	            temp=n;
+	            while((50-temp)%2!=0){
+	                temp-=3;
+	                count++;
+	            }
+	            cout<<count+(50-temp)/2<<endl;
+	        }
+	    }
+	    else if(n>50){
+	        if((n-50)%3==0){
+	            cout<<(n-50)/3<<endl;
+	        }
+	        else{
+	            temp=n;
+	            while((temp-50)%3!=0){
+	                temp+=2;
+	                count++;
+	            }
+	            cout<<count+(temp-50)/3<<endl;
+	        }
+	    }
+	    else{
+	        cout<<"0"<<endl;
+	    }
+	}
+	return 0;
+}
