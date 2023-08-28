@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,x,k,p;
+	    cin>>n>>x>>k>>p;
+	    if(k<=x){
+	        cout<<p+k*10<<endl;
+	    }
+	    else if(k>x && k<n){
+	        cout<<p+x*10+(k-x)*5<<endl;
+	    }
+	    else if(k==n){
+	        cout<<20+p+x*10+(k-x)*5<<endl;
+	    }
+	}
+	return 0;
+}
