@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T,X,Y,i;
+	cin>>T;
+	if(T>=1 && T<=10000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        cin>>X>>Y;
+	        if(X>=1 && X<=10000 && Y>=1 && Y<=10000 && Y>=X)
+	        {
+	            if((Y-X)%8==0)
+	            {
+	                cout<<(Y-X)/8<<endl;
+	            }
+	            else
+	            {
+	                cout<<(Y-X)/8+1<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
