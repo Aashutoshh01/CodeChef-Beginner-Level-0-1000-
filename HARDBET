@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int s1,s2,s3;
+	    cin>>s1>>s2>>s3;
+	    if(s1<s2 && s1<s3){
+	        cout<<"Draw"<<endl;
+	    }
+	    else if(s2<s1 && s2<s3){
+	        cout<<"Bob"<<endl;
+	    }
+	    else if(s3<s1 && s3<s2){
+	        cout<<"Alice"<<endl;
+	    }
+	}
+	return 0;
+}
