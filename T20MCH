@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int R,O,C;
+	cin>>R>>O>>C;
+	if(R>=0 && R<=720 && C>=0 && C<=720 && O>=1 && O<=19 && C>=0 && C<=36*O)
+	{
+	    if(R+1-C<=(20-O)*36)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
