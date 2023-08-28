@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	long int t;
+	cin>>t;
+	while(t--){
+	    long int p;
+	    cin>>p;
+	    cout<<1+(p/2)<<endl;
+	}
+	return 0;
+}
