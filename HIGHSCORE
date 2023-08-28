@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int N,N1,N2,N3,N4;
+	        cin>>N>>N1>>N2>>N3>>N4;
+	        if(N>=1 && N<=100000 && N1>=0 && N1<=N && N2>=0 && N2<=N && N3>=0 && N3<=N && N4>=0 && N4<=N && N1+N2+N3+N4==N)
+	        {
+	            if(N1>=N2 && N1>=N3 && N1>=N4)
+	            {
+	                cout<<N1<<endl;
+	            }
+	            else
+	            {
+	                if(N2>=N3 && N2>=N4)
+	                {
+	                    cout<<N2<<endl;
+	                }
+	                else
+	                {
+	                    if(N3>=N4)
+	                    {
+	                        cout<<N3<<endl;
+	                    }
+	                    else
+	                    {
+	                        cout<<N4<<endl;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
