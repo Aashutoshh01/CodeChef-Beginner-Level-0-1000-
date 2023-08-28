@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=144)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int X,Y,A,B;
+	        cin>>X>>Y>>A>>B;
+	        if(X>=1 && X<=4 && Y>=1 && Y<=4 && A>=1 && A<=4 && B>=1 && B<=4 && X!=Y && A!=B)
+	        {
+	            int j=0,K[2]={X,Y};
+	            for(int i=0;i<2;i++)
+	            {
+	                if(K[i]==A || K[i]==B)
+	                {
+	                    j++;
+	                }
+	            }
+	            cout<<2-j<<endl;
+	        }
+	    }
+	}
+	return 0;
+}
