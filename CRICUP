@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=2000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int X,Y,D;
+	        cin>>X>>Y>>D;
+	        if(X>=1 && X<=100 && Y>=1 && Y<=100 && D>=0 && D<=100)
+	        {
+	            if(X>=Y)
+	            {
+	                if((X-Y)<=D)
+	                {
+	                    cout<<"YES"<<endl;
+	                }
+	                else
+	                {
+	                    cout<<"NO"<<endl;
+	                }
+	            }
+	            else
+	            {
+	                if((Y-X)<=D)
+	                {
+	                    cout<<"YES"<<endl;
+	                }
+	                else
+	                {
+	                    cout<<"NO"<<endl;
+	                }
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
