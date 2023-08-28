@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int N,X,P;
+	        cin>>N>>X>>P;
+	        if(N>=1 && N<=100 && X>=0 && X<=N && P>=0 && P<=3*N)
+	        {
+	            if(3*X-(N-X)>=P)
+	            {
+	                cout<<"PASS"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"FAIL"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
