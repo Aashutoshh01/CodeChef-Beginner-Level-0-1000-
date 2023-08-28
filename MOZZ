@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int x,y,r,temp;
+	    cin>>x>>y>>r;
+	    temp=(r/30)+x;
+	    if(temp%y==0){
+	        cout<<temp/y<<endl;
+	    }
+	    else{
+	        cout<<(temp/y)+1<<endl;
+	    }
+	}
+	return 0;
+}
