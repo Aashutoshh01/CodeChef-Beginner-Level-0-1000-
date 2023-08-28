@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,a,b,i=0;
+	    cin>>n>>a>>b;
+	    n=n;
+	    while(n>1){
+	        n=n/2;
+	        i++;
+	    }
+	    cout<<(i)*a+(i-1)*b<<endl;
+	}
+	return 0;
+}
