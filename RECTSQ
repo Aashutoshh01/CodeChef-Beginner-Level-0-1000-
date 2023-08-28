@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,m;
+	    cin>>n>>m;
+	    int flag;
+	    for(int i=1;i<=n && i<=m;i++){
+	        if(n%i==0 && m%i==0){
+	            flag=i;
+	        }
+	    }
+	    cout<<(n/flag)*(m/flag)<<endl;
+	}
+	return 0;
+}
