@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int sum(int n){
+    int r=0;
+    for(int i=1;i<=n;i++){
+        r+=i;
+    }
+    return r;
+}
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int d,n;
+	    cin>>d>>n;
+	    int temp=n;
+	    for(int i=1;i<=d;i++){
+	        temp=sum(temp);
+	    }
+	    cout<<temp<<endl;
+	}
+	return 0;
+}
