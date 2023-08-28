@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,x=0,y=0;
+	    cin>>n;
+	    string a[n];
+	    for(int i=0;i<n;i++){
+	        cin>>a[i];
+	        }
+	        for(int i=0;i<n;i++){
+	            if(a[i]=="START38"){
+	                x++;
+	            }
+	            if(a[i]=="LTIME108"){
+	                y++;
+	            }
+	        }
+	        cout<<x<<" "<<y<<endl;
+	    }
+	return 0;
+}
