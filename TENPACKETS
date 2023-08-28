@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int X,Y;
+	        cin>>X>>Y;
+	        if(X>=1 && X<100 && Y>1 && Y<=100 && Y<=2*X)
+	        {
+	            if(5*X<3*X+Y && 5*X<X+2*Y)
+	            {
+	                cout<<5*X<<endl;
+	            }
+	            else
+	            {
+	                if(Y+3*X<2*Y+X)
+	                {
+	                    cout<<Y+3*X<<endl;
+	                }
+	                else
+	                {
+	                    cout<<2*Y+X<<endl;
+	                }
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
