@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here 
+	long int t;
+	cin>>t;
+	while(t--){
+	    long int n;
+	    cin>>n;
+	    long int temp;
+	    int count=0;
+	    if(n%100==0){
+	        cout<<n/100<<endl;
+	    }
+	    else{
+	        count+=n/100;
+	        temp=n%100;
+	        if(temp%50==0){
+	            count+=temp/50;
+	            cout<<count<<endl;
+	        }
+	        else{
+	            count+=temp/50;
+	            temp=temp%50;
+	            if(temp%10==0){
+	                count+=temp/10;
+	                cout<<count<<endl;
+	            }
+	            else{
+	                count+=temp/10;
+	                temp=temp%10;
+	                if(temp%5==0){
+	                    count+=temp/5;
+	                    cout<<count<<endl;
+	                }
+	                else{
+	                    count+=temp/5;
+	                    temp=temp%5;
+	                    if(temp%2==0){
+	                        count+=temp/2;
+	                        cout<<count<<endl;
+	                    }
+	                    else{
+	                        count+=temp/2;
+	                        temp=temp%2;
+	                        if(temp%1==0){
+	                            count+=temp/1;
+	                            cout<<count<<endl;
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
