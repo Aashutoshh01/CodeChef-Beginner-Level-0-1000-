@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int p[3],q[3];
+	    int s1=0,s2=0;
+	    for(int i=0;i<3;i++){
+	        cin>>p[i];
+	    }
+	    for(int i=0;i<3;i++){
+	        cin>>q[i];
+	    }
+	    for(int i=0;i<3;i++){
+	        if(p[i]>q[i]){
+	            s1++;
+	        }
+	        else if(p[i]<q[i]){
+	            s2++;
+	        }
+	    }
+	    if(s1>s2){
+	        cout<<"A"<<endl;
+	    }
+	    else if(s2>s1){
+	        cout<<"B"<<endl;
+	    }
+	}
+	return 0;
+}
