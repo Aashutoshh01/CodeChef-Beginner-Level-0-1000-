@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,k;
+	    int a=0,b=0;
+	    cin>>n>>k;
+	    int p[n];
+	    for(int i=0;i<n;i++){
+	        cin>>p[i];
+	    }
+	    for(int i=0;i<n;i++){
+	        a+=p[i];
+	        if(p[i]>k){
+	            b+=k;
+	        }
+	        else{
+	            b+=p[i];
+	        }
+	    }
+	    cout<<a-b<<endl;
+	}
+	return 0;
+}
