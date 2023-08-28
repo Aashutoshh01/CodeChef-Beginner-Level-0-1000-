@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    float x,y,z,a,b;
+	    cin>>x>>y>>z>>a>>b;
+	    if((float)(z-x)/a < (float)(y-z)/b){
+	        cout<<"Chef"<<endl;
+	    }
+	    else if((float)(z-x)/a > (float)(y-z)/b){
+	        cout<<"Kefa"<<endl;
+	    }
+	    else{
+	        cout<<"Draw"<<endl;
+	    }
+	}
+	return 0;
+}
