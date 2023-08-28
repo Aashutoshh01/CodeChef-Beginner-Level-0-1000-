@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    char r;
+	    cin>>r;
+	    if(r=='b' || r=='B'){
+	        cout<<"BattleShip"<<endl;
+	    }
+	    else if(r=='c' || r=='C'){
+	        cout<<"Cruiser"<<endl;
+	    }
+	    else if(r=='d' || r=='D'){
+	        cout<<"Destroyer"<<endl;
+	    }
+	    else if(r=='f' || r=='F'){
+	        cout<<"Frigate"<<endl;
+	    }
+	}
+	return 0;
+}
