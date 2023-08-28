@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=10000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int W,X,Y,Z;
+	        cin>>W>>X>>Y>>Z;
+	        if(W>=1 && W<=100000 && X>=1 && X<=100000 && Y>=1 && Y<=100000 && Z>=1 && Z<=100000)
+	        {
+	            if(W==X+Y+Z || W==X+Y || W==Y+Z || W==Z+X || W==X || W==Y || W==Z)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else 
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
