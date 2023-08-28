@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    float a,b,c,d;
+	    cin>>a>>b>>c>>d;
+	    float p,q;
+	    p=(float)(pow(a,2)/pow(c,3));
+	    q=(float)(pow(b,2)/pow(d,3));
+	    if(p==q){
+	        cout<<"YES"<<endl;
+	    }
+	    else{
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
