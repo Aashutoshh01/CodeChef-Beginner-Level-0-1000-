@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=2500)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int A,B,X,Y;
+	        cin>>A>>B>>X>>Y;
+	        if(A>=1 && A<=100 && B>=1 && B<=100 && X>=1 && X<=10 && Y>=1 && Y<=10)
+	        {
+	            float time1,time2;
+	            time1=(float)A/X;
+	            time2=(float)B/Y;
+	            if(time1<time2)
+	            {
+	                cout<<"CHEF"<<endl;
+	            }
+	            else if(time2<time1)
+	            {
+	                cout<<"CHEFINA"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"BOTH"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
