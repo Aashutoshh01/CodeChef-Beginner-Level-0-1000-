@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int a1,a2,a3,b1,b2,b3,min1,min2;
+	    cin>>a1>>a2>>a3>>b1>>b2>>b3;
+	    if(a1<=a2 && a1<=a3){
+	        min1=a1;
+	    }
+	    else{
+	        if(a2<=a3){
+	            min1=a2;
+	        }
+	        else{
+	            min1=a3;
+	        }
+	    }
+	    if(b1<=b2 && b1<=b3){
+	        min2=b1;
+	    }
+	    else{
+	        if(b2<=b3){
+	            min2=b2;
+	        }
+	        else{
+	            min2=b3;
+	        }
+	    }
+	    if(a1+a2+a3-min1>b1+b2+b3-min2){
+	        cout<<"ALICE"<<endl;
+	    }
+	    else if(a1+a2+a3-min1<b1+b2+b3-min2){
+	        cout<<"BOB"<<endl;
+	    }
+	    else{
+	        cout<<"TIE"<<endl;
+	    }
+	}
+	return 0;
+}
