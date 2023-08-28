@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b,m;
+	    cin>>a>>b>>m;
+	    if(a>b){
+	        if((a-b)<=m/2){
+	            cout<<a-b<<endl;
+	        }
+	        else{
+	            cout<<m-(a-b)<<endl;
+	        }
+	    }
+	    else{
+	        if((b-a)<=m/2){
+	            cout<<b-a<<endl;
+	        }
+	        else{
+	            cout<<m-(b-a)<<endl;
+	        }
+	    }
+	}
+	return 0;
+}
