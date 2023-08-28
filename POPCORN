@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    long int a1,a2,b1,b2,c1,c2;
+	    cin>>a1>>a2>>b1>>b2>>c1>>c2;
+	    long int p,q,r;
+	    p=a1+a2;
+	    q=b1+b2;
+	    r=c1+c2;
+	    if(p>=q && p>=r){
+	        cout<<p<<endl;
+	    }
+	    else if(q>=p && q>=r){
+	        cout<<q<<endl;
+	    }
+	    else if(r>=p && r>=q){
+	        cout<<r<<endl;
+	    }
+	}
+	return 0;
+}
