@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int X,Y,floor1,floor2;
+	        cin>>X>>Y;
+	        if(X>=1 && X<=100 && Y>=1 && Y<=100 && X!=Y)
+	        {
+	            if(X%10==0)
+	            {
+	                floor1=X/10;
+	            }
+	            else
+	            {
+	                floor1=(X/10)+1;
+	            }
+	            if(Y%10==0)
+	            {
+	                floor2=Y/10;
+	            }
+	            else
+	            {
+	                floor2=(Y/10)+1;
+	            }
+	            if(floor1>=floor2)
+	            {
+	                cout<<floor1-floor2<<endl;
+	            }
+	            else
+	            {
+	                cout<<floor2-floor1<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
