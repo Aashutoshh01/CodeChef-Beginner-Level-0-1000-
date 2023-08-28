@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+long int call(long int n){
+    if(n<12){
+        return n;
+    }
+    else{
+        return call(n/2)+call(n/3)+call(n/4);
+    }
+}
+
+int main() {
+	// your code goes here
+	long int n;
+	while(cin>>n){
+	    cout<<call(n)<<endl;
+	}
+	return 0;
+}
