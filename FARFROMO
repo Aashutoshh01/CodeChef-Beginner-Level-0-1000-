@@ -1,0 +1,36 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=2000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int X1,Y1,X2,Y2;
+	        float d1,d2;
+	        cin>>X1>>Y1>>X2>>Y2;
+	        if(X1>=-1000 && X1<=1000 && Y1>=-1000 && Y1<=1000 && X2>=-1000 && X2<=1000 && Y2>=-1000 && Y2<=1000)
+	        {
+	            d1=sqrt(pow(X1,2)+pow(Y1,2));
+	            d2=sqrt(pow(X2,2)+pow(Y2,2));
+	            if(d1>d2)
+	            {
+	                cout<<"ALEX"<<endl;
+	            }
+	            else if(d2>d1)
+	            {
+	                cout<<"BOB"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"EQUAL"<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
