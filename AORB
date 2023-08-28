@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	if(T>=1 && T<=1000)
+	{
+	    for(int i=0;i<T;i++)
+	    {
+	        int X,Y;
+	        cin>>X>>Y;
+	        if(X>=1 && X<=100 && Y>=1 && Y<=100)
+	        {
+	            if(1500-2*X-4*(X+Y)>=1500-4*Y-2*(X+Y))
+	            {
+	                cout<<1500-2*X-4*(X+Y)<<endl;
+	            }
+	            else
+	            {
+	                cout<<1500-4*Y-2*(X+Y)<<endl;
+	            }
+	        }
+	    }
+	}
+	return 0;
+}
