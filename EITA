@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int d,x,y,z;
+	    cin>>d>>x>>y>>z;
+	    if(7*x>=y*d+z*(7-d)){
+	        cout<<7*x<<endl;
+	    }
+	    else{
+	        cout<<y*d+z*(7-d)<<endl;
+	    }
+	}
+	return 0;
+}
