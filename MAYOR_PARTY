@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int  x,y,z;
+	    cin>>x>>y>>z;
+	    if(y>=x+z){
+	        cout<<y<<endl;
+	    }
+	    else{
+	        cout<<x+z<<endl;
+	    }
+	}
+	return 0;
+}
