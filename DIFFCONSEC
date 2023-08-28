@@ -1,0 +1,28 @@
+#include <iostream>
+#include<string.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    string s;
+	    char temp;
+	    int count=0;
+	    cin>>n;
+	    cin>>s;
+	    temp=s[0];
+	    for(int i=1;s[i]!='\0';i++){
+	        if(s[i]==temp){
+	            count++;
+	        }
+	        else{
+	            temp=s[i];
+	        }
+	    }
+	    cout<<count<<endl;
+	}
+	return 0;
+}
